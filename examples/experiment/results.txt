@@ -1,0 +1,15 @@
+floor for prompt NLL = log V = 2.079; chance answer acc = 0.125
+
+=== n_train = 500, steps = 6000, seeds = [0, 1, 2, 3, 4]
+lam | val_ans_acc (mean±sd) | val_ans_nll | train_ans_nll | val_prompt_nll | train_prompt_nll | steps_to_90%
+0.0 | 0.154±0.004 | 7.575 | 0.001 | 6.591 | 6.794 | nan (0/5 reached)  [110s]
+0.1 | 0.142±0.003 | 8.416 | 0.010 | 5.493 | 1.127 | nan (0/5 reached)  [107s]
+0.3 | 0.135±0.006 | 9.087 | 0.015 | 5.924 | 0.963 | nan (0/5 reached)  [94s]
+1.0 | 0.129±0.004 | 9.127 | 0.033 | 5.959 | 0.895 | nan (0/5 reached)  [109s]
+
+=== n_train = 5000, steps = 6000, seeds = [0, 1, 2, 3, 4]
+lam | val_ans_acc (mean±sd) | val_ans_nll | train_ans_nll | val_prompt_nll | train_prompt_nll | steps_to_90%
+0.0 | 0.445±0.148 | 1.163 | 1.089 | 2.799 | 2.828 | nan (0/5 reached)  [105s]
+0.1 | 0.347±0.164 | 1.461 | 1.406 | 2.124 | 2.112 | nan (0/5 reached)  [112s]
+0.3 | 0.260±0.126 | 1.598 | 1.570 | 2.095 | 2.087 | nan (0/5 reached)  [98s]
+1.0 | 0.127±0.005 | 2.092 | 2.070 | 2.083 | 2.078 | nan (0/5 reached)  [64s]

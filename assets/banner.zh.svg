@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', Helvetica, Arial, sans-serif" role="img">
+<rect x="0.5" y="0.5" width="1199" height="299" rx="18" fill="#F7F5F0" stroke="#D8D4CC"/>
+<text x="60" y="100" font-size="46" fill="#1F2430" font-weight="700" text-anchor="start">research-learning</text>
+<text x="60" y="150" font-size="28" fill="#1F2430" font-weight="400" text-anchor="start">把一项机器学习技术学到能复现、能质疑、能验证改进</text>
+<text x="60" y="186" font-size="17" fill="#5B6270" font-weight="400" text-anchor="start">五步讲课 · 论断标明状态 · 验证和实验只在你需要时才做</text>
+<rect x="60" y="222" width="100" height="46" rx="23" fill="#2F6FDE"/>
+<text x="110" y="251" font-size="17" fill="#FFFFFF" font-weight="600" text-anchor="middle">学习</text>
+<rect x="176" y="222" width="100" height="46" rx="23" fill="#1F9D6B"/>
+<text x="226" y="251" font-size="17" fill="#FFFFFF" font-weight="600" text-anchor="middle">验证</text>
+<rect x="292" y="222" width="100" height="46" rx="23" fill="#D9480F"/>
+<text x="342" y="251" font-size="17" fill="#FFFFFF" font-weight="600" text-anchor="middle">实验</text>
+<rect x="408" y="222" width="100" height="46" rx="23" fill="#C2255C"/>
+<text x="458" y="251" font-size="17" fill="#FFFFFF" font-weight="600" text-anchor="middle">分享</text>
+</svg>

@@ -1,0 +1,39 @@
+plain QK^T/sqrt(d) std at x1, x100: 1.0118578741644106 10118.578741644107
+Claim checks for excerpt: softmax / attention numbers
+| # | Result | Check | Got | Expected | Note |
+|---|---|---|---|---|---|
+| 1 | PASS | 1. softmax([1,2,3])[0] | 0.0900306 | 0.09 | about [0.09,0.245,0.665] |
+| 2 | PASS | 1. softmax([1,2,3])[1] | 0.244728 | 0.245 | about [0.09,0.245,0.665] |
+| 3 | PASS | 1. softmax([1,2,3])[2] | 0.665241 | 0.665 | about [0.09,0.245,0.665] |
+| 4 | PASS | 2. softmax([10,20,30])[2] | 0.999955 | 0.999955 |  |
+| 5 | PASS | 2. softmax([10,20,30])[0] ~ 0 | 2.06106e-09 | < 1e-08 | actual 2.061e-09 |
+| 6 | PASS | 3. sigmoid(2) | 0.880797 | 0.881 |  |
+| 7 | PASS | 4. a(1-a) at a=0.1 | 0.09 | 0.09 | claimed 0.09, exact 0.09 |
+| 8 | PASS | 4. a(1-a) at a=0.3 | 0.21 | 0.21 | claimed 0.21, exact 0.21 |
+| 9 | PASS | 4. a(1-a) at a=0.5 | 0.25 | 0.25 | claimed 0.25, exact 0.25 |
+| 10 | PASS | 4. a(1-a) at a=0.9 | 0.09 | 0.09 | claimed 0.09, exact 0.09 |
+| 11 | FAIL | 4. a(1-a) at a=0.99 | 0.0099 | 0.009 | claimed 0.009, exact 0.0099 |
+| 12 | PASS | 4. a(1-a) at a=0.999 | 0.000999 | 0.000999 | claimed 0.000999, exact 0.000999 |
+| 13 | PASS | 4. d a_i/d s_i = a_i(1-a_i) (finite diff) | True | True |  |
+| 14 | PASS | 5. dL/ds at s=[0,0] | [np.float64(0.5), np.float64(-0.5)] | [np.float64(0.5), np.float64(-0.5)] | expected [0.5,-0.5]; max abs error 4.11e-11 |
+| 15 | PASS | 5. dL/ds_1 at s=[0,0] | 0.5 | 0.5 |  |
+| 16 | PASS | 5. dL/ds_2 at s=[0,0] | -0.5 | -0.5 |  |
+| 17 | PASS | 5. formula at s=[10,0] | [np.float64(0.00018157), np.float64(-0.00018157)] | [np.float64(0.00018158), np.float64(-0.00018158)] | max abs error 2.12e-10 |
+| 18 | PASS | 5. dL/ds_1 at s=[10,0] | 0.000181575 | 0.00018 | exact 1.815750e-04 |
+| 19 | PASS | 5. dL/ds_2 at s=[10,0] | -0.000181575 | -0.00018 | exact -1.815750e-04 |
+| 20 | PASS | 6. Var(q.k), d=16 | 15.9647 | 16 | 200k samples, seed 0, 2% rel tol |
+| 21 | PASS | 6. Var(q.k/sqrt d), d=16 | 0.997793 | 1 | 200k samples, seed 0 |
+| 22 | PASS | 6. Var(q.k), d=64 | 63.8396 | 64 | 200k samples, seed 0, 2% rel tol |
+| 23 | PASS | 6. Var(q.k/sqrt d), d=64 | 0.997493 | 1 | 200k samples, seed 0 |
+| 24 | PASS | 6. Var(q.k), d=256 | 255.172 | 256 | 200k samples, seed 0, 2% rel tol |
+| 25 | PASS | 6. Var(q.k/sqrt d), d=256 | 0.996767 | 1 | 200k samples, seed 0 |
+| 26 | PASS | 7. C == D elementwise, scale x1 | True | True | max|C-D|=0.00e+00 |
+| 27 | PASS | 8. std(C) == std(D), scale x1 | True | True | std C=0.992198, std D=0.992198 |
+| 28 | PASS | 7. C == D elementwise, scale x10 | True | True | max|C-D|=0.00e+00 |
+| 29 | PASS | 8. std(C) == std(D), scale x10 | True | True | std C=0.992198, std D=0.992198 |
+| 30 | PASS | 7. C == D elementwise, scale x100 | True | True | max|C-D|=0.00e+00 |
+| 31 | PASS | 8. std(C) == std(D), scale x100 | True | True | std C=0.992198, std D=0.992198 |
+| 32 | PASS | 8. C is scale invariant (x1 vs x100) | True | True |  |
+
+31 of 32 checks passed.
+Failed: 4. a(1-a) at a=0.99

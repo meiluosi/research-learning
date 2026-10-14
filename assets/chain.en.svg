@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', Helvetica, Arial, sans-serif" role="img">
+<rect x="0.5" y="0.5" width="1199" height="299" rx="18" fill="#F7F5F0" stroke="#D8D4CC"/>
+<text x="600" y="44" font-size="22" fill="#1F2430" font-weight="700" text-anchor="middle">Where it sits in the series</text>
+<rect x="53" y="80" width="245" height="110" rx="14" fill="#FFFFFF" stroke="#2F6FDE" stroke-width="2.4"/>
+<text x="175" y="124" font-size="19" fill="#2F6FDE" font-weight="700" text-anchor="middle">research-learning</text>
+<text x="175" y="160" font-size="16" fill="#5B6270" font-weight="400" text-anchor="middle">learn and test</text>
+<path d="M302 135 h24" stroke="#5B6270" stroke-width="2"/>
+<path d="M332 135 l-8 -5 v10 z" fill="#5B6270"/>
+<rect x="336" y="80" width="245" height="110" rx="14" fill="#FFFFFF" stroke="#1F9D6B" stroke-width="1.6"/>
+<text x="458" y="124" font-size="15" fill="#1F9D6B" font-weight="700" text-anchor="middle">content-topic-decomposer</text>
+<text x="458" y="160" font-size="16" fill="#5B6270" font-weight="400" text-anchor="middle">plan what to post</text>
+<path d="M585 135 h24" stroke="#5B6270" stroke-width="2"/>
+<path d="M615 135 l-8 -5 v10 z" fill="#5B6270"/>
+<rect x="619" y="80" width="245" height="110" rx="14" fill="#FFFFFF" stroke="#D9480F" stroke-width="1.6"/>
+<text x="741" y="124" font-size="15" fill="#D9480F" font-weight="700" text-anchor="middle">human-in-the-loop-writing</text>
+<text x="741" y="160" font-size="16" fill="#5B6270" font-weight="400" text-anchor="middle">write it, with you in it</text>
+<path d="M868 135 h24" stroke="#5B6270" stroke-width="2"/>
+<path d="M898 135 l-8 -5 v10 z" fill="#5B6270"/>
+<rect x="902" y="80" width="245" height="110" rx="14" fill="#FFFFFF" stroke="#C2255C" stroke-width="1.6"/>
+<text x="1024" y="124" font-size="19" fill="#C2255C" font-weight="700" text-anchor="middle">content-card-designer</text>
+<text x="1024" y="160" font-size="16" fill="#5B6270" font-weight="400" text-anchor="middle">make the cards</text>
+<text x="600" y="244" font-size="18" fill="#5B6270" font-weight="600" text-anchor="middle">Real experiment results become the real material the later skills ask for.</text>
+</svg>
